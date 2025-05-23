@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - Mi Aprendizaje Web</title>
+    <style>
+        /* Paleta minimalista profesional: #F8F9FA #E9ECEF #DEE2E6 #CED4DA #6C757D */
+        
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #F8F9FA;
+            color: #6C757D;
+        }
+        
+        /* Barra de navegación */
+        nav {
+            background-color: #6C757D;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav a {
+            color: #F8F9FA;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #E9ECEF;
+            text-decoration: underline;
+        }
+        
+        /* Contenedor principal */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+            border: 1px solid #E9ECEF;
+        }
+        
+        /* Encabezado */
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .header-text {
+            flex: 1;
+            padding-right: 30px;
+            min-width: 300px;
+        }
+        
+        .header-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border: 1px solid #DEE2E6;
+        }
+        
+        h1 {
+            color: #495057;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #6C757D;
+            line-height: 1.7;
+        }
+        
+        /* Sección de información */
+        .info-section {
+            background-color: #E9ECEF;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #CED4DA;
+        }
+        
+        .info-section h2 {
+            color: #495057;
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+            }
+            .header-text {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+            .header-image {
+                width: 100%;
+                height: auto;
+                max-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="acerca.html">Acerca de</a>
+        <a href="tareas.html">Tareas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <div class="header-text">
+                <h1>Acerca de este proyecto</h1>
+                <p>Esta página forma parte de mi proceso de aprendizaje en desarrollo web durante el curso en el Instituto Libertad.</p>
+                <p>El objetivo principal es aplicar los conocimientos adquiridos sobre HTML, CSS y JavaScript para crear un sitio web funcional y bien estructurado.</p>
+                
+                <div class="info-section">
+                    <h2>Detalles del proyecto</h2>
+                    <p>Este sitio web muestra mi progreso a lo largo de los diferentes parciales del curso, incluyendo:</p>
+                    <ul>
+                        <li>Tareas completadas</li>
+                        <li>Recursos de aprendizaje</li>
+                        <li>Proyectos prácticos</li>
+                        <li>Ejemplos de código</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Aprendizaje web" class="header-image">
+        </div>
+    </div>
+</body>
+</html>

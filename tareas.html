@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas del Curso</title>
+    <style>
+        /* Paleta minimalista profesional: #F8F9FA #E9ECEF #DEE2E6 #CED4DA #6C757D */
+        
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #F8F9FA;
+            color: #6C757D;
+            line-height: 1.6;
+        }
+        
+        /* Barra de navegación */
+        nav {
+            background-color: #6C757D;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            color: #F8F9FA;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 1.05rem;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        nav a:hover {
+            color: #E9ECEF;
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        /* Contenedor principal */
+        .main-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        /* Encabezados de sección */
+        .section-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+        }
+        
+        .section-header h1 {
+            color: #495057;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .section-header p {
+            color: #6C757D;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Sección de tareas */
+        .tareas-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 1px solid #E9ECEF;
+        }
+        
+        /* Tarjetas de tarea */
+        .tarea {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            background-color: #F8F9FA;
+            transition: all 0.3s ease;
+            border-left: 4px solid #CED4DA;
+        }
+        
+        .tarea:hover {
+            transform: translateX(5px);
+            background-color: #E9ECEF;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .tarea-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #6C757D;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .tarea-content h3 {
+            color: #495057;
+            margin-bottom: 5px;
+        }
+        
+        .tarea-content p {
+            color: #6C757D;
+            font-size: 0.95rem;
+        }
+        
+        .tarea-link {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            width: 100%;
+        }
+        
+        /* Estilo para tareas no disponibles */
+        .tarea.error-404 {
+            border-left-color: #DEE2E6;
+        }
+        
+        .tarea.error-404 .tarea-icon {
+            background-color: #DEE2E6;
+            color: #6C757D;
+        }
+        
+        /* Pie de página */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 25px;
+            color: #6C757D;
+            font-size: 0.9rem;
+            border-top: 1px solid #E9ECEF;
+            background-color: white;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .tarea {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .tarea-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                padding: 5px 8px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación con Contacto incluido -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="acerca.html">Acerca de</a>
+        <a href="tareas.html">Tareas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="main-container">
+        <!-- Primer Parcial -->
+        <div class="section-header">
+            <h1>Primer Parcial</h1>
+            <p>Tareas del primer periodo académico</p>
+        </div>
+        
+        <div class="tareas-section">
+            <!-- Tarea 1 - Diagrama -->
+            <div class="tarea">
+                <a href="diagrama.pdf" class="tarea-link" target="_blank">
+                    <div class="tarea-icon">1</div>
+                    <div class="tarea-content">
+                        <h3>Diagrama de flujo</h3>
+                        <p>Tipos de triángulos (equilátero, isósceles y escaleno)</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarea 2 - Infografía -->
+            <div class="tarea">
+                <a href="infografia.pdf" class="tarea-link" target="_blank">
+                    <div class="tarea-icon">2</div>
+                    <div class="tarea-content">
+                        <h3>Infografía</h3>
+                        <p>Métodos de aprendizaje visual, auditivo y verbal</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarea 3 - IA'S -->
+            <div class="tarea">
+                <a href="IAS.pdf" class="tarea-link" target="_blank">
+                    <div class="tarea-icon">3</div>
+                    <div class="tarea-content">
+                        <h3>Cultura Digital</h3>
+                        <p>Un vistazo al futuro</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarea 4 - Error 404 -->
+            <div class="tarea error-404">
+                <a href="#" class="tarea-link">
+                    <div class="tarea-icon">4</div>
+                    <div class="tarea-content">
+                        <h3>Error 404</h3>
+                        <p>Página no encontrada</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Segundo Parcial -->
+        <div class="section-header">
+            <h1>Segundo Parcial</h1>
+            <p>Tareas del segundo periodo académico</p>
+        </div>
+        
+        <div class="tareas-section">
+            <!-- Tarea 1 - PDF de investigación -->
+            <div class="tarea">
+                <a href="investigacion.pdf" class="tarea-link" target="_blank">
+                    <div class="tarea-icon">1</div>
+                    <div class="tarea-content">
+                        <h3>Investigación</h3>
+                        <p>Documento PDF con la investigación asignada</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarea 2 - Formulario Google -->
+            <div class="tarea">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScq1d-I3-ZY0pkSFVS81mb8i-F1dckeHSNe4PwQ0lSMEzVlMw/viewform" class="tarea-link" target="_blank">
+                    <div class="tarea-icon">2</div>
+                    <div class="tarea-content">
+                        <h3>Formulario de Encuesta</h3>
+                        <p>Formulario Google para completar la encuesta asignada</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarea 3 - Página primera -->
+            <div class="tarea">
+                <a href="pagina-primera.html" class="tarea-link" target="_blank">
+                    <div class="tarea-icon">3</div>
+                    <div class="tarea-content">
+                        <h3>Página Principal</h3>
+                        <p>Primera página web del proyecto</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarea 4 - Error 404 -->
+            <div class="tarea error-404">
+                <a href="#" class="tarea-link">
+                    <div class="tarea-icon">4</div>
+                    <div class="tarea-content">
+                        <h3>Error 404</h3>
+                        <p>Página no encontrada</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarea 5 - Error 404 -->
+            <div class="tarea error-404">
+                <a href="#" class="tarea-link">
+                    <div class="tarea-icon">5</div>
+                    <div class="tarea-content">
+                        <h3>Error 404</h3>
+                        <p>Página no encontrada</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarea 6 - Tabla -->
+            <div class="tarea">
+                <a href="tabla.html" class="tarea-link" target="_blank">
+                    <div class="tarea-icon">6</div>
+                    <div class="tarea-content">
+                        <h3>Tabla de Datos</h3>
+                        <p>Tabla con información relevante del curso</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Tercer Parcial -->
+        <div class="section-header">
+            <h1>Tercer Parcial</h1>
+            <p>Tareas del tercer periodo académico</p>
+        </div>
+        
+        <div class="tareas-section">
+            <!-- Tarea 1 - Música -->
+            <div class="tarea">
+                <a href="musica.html" class="tarea-link" target="_blank">
+                    <div class="tarea-icon">1</div>
+                    <div class="tarea-content">
+                        <h3>Página de Música Clásica</h3>
+                        <p>Información básica sobre historia, compositores e instrumentos</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarea 2 - Error 404 -->
+            <div class="tarea error-404">
+                <a href="#" class="tarea-link">
+                    <div class="tarea-icon">2</div>
+                    <div class="tarea-content">
+                        <h3>Error 404</h3>
+                        <p>Página no encontrada</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarea 3 - Música 2 -->
+            <div class="tarea">
+                <a href="music2.html" class="tarea-link" target="_blank">
+                    <div class="tarea-icon">3</div>
+                    <div class="tarea-content">
+                        <h3>Música Clásica con Tabla Comparativa</h3>
+                        <p>Página con tabla de periodos musicales</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarea 4 - Música 3 -->
+            <div class="tarea">
+                <a href="MUSICA3.html" class="tarea-link" target="_blank">
+                    <div class="tarea-icon">4</div>
+                    <div class="tarea-content">
+                        <h3>Música Clásica Completa</h3>
+                        <p>Página con tabla comparativa y formulario de contacto</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Instituto Libertad. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <style>
+        /* Paleta minimalista profesional: #F8F9FA #E9ECEF #DEE2E6 #CED4DA #6C757D */
+        
+        /* Estilos generales */
+        body {
+            background-color: #F8F9FA;
+            font-family: 'Arial', sans-serif;
+            color: #6C757D;
+            margin: 0;
+        }
+        
+        /* Barra de navegación */
+        nav {
+            background-color: #6C757D;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav a {
+            color: #F8F9FA;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #E9ECEF;
+            text-decoration: underline;
+        }
+        
+        /* Contenido principal */
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #495057;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            border: 1px solid #E9ECEF;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #495057;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #CED4DA;
+            border-radius: 4px;
+            background-color: #F8F9FA;
+        }
+        
+        input[type="submit"] {
+            background-color: #6C757D;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="acerca.html">Acerca de</a>
+        <a href="tareas.html">Tareas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <h1>Contacto</h1>
+    
+    <!-- Formulario original sin cambios en la estructura -->
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <input type="submit" value="Enviar Mensaje">
+    </form>
+</body>
+</html>

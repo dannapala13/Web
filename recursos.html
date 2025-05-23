@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Académicos</title>
+    <style>
+        /* Paleta minimalista profesional: #F8F9FA #E9ECEF #DEE2E6 #CED4DA #6C757D */
+        
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #F8F9FA;
+            color: #6C757D;
+            line-height: 1.6;
+        }
+        
+        /* Barra de navegación */
+        nav {
+            background-color: #6C757D;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            color: #F8F9FA;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-size: 1.05rem;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        nav a:hover {
+            color: #E9ECEF;
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        /* Contenedor principal */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        /* Encabezado */
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+        
+        .page-header h1 {
+            color: #495057;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .page-header p {
+            color: #6C757D;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Visualizador de PDF */
+        .pdf-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+            margin-bottom: 40px;
+            border: 1px solid #E9ECEF;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .pdf-header {
+            background-color: #6C757D;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        
+        .pdf-viewer {
+            width: 100%;
+            height: 70vh;
+            border: none;
+        }
+        
+        .download-btn {
+            display: block;
+            text-align: center;
+            background-color: #6C757D;
+            color: white;
+            padding: 12px 0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .download-btn:hover {
+            background-color: #495057;
+        }
+        
+        /* Pie de página */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 25px;
+            color: #6C757D;
+            font-size: 0.9rem;
+            border-top: 1px solid #E9ECEF;
+            background-color: white;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .pdf-viewer {
+                height: 50vh;
+            }
+            
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                padding: 5px 8px;
+                font-size: 0.95rem;
+            }
+            
+            .page-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación con Contacto incluido -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="acerca.html">Acerca de</a>
+        <a href="tareas.html">Tareas</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <header class="page-header">
+            <h1>Recursos Académicos</h1>
+            <p>Documentos y materiales principales para el curso de Cultura Digital I</p>
+        </header>
+        
+        <!-- Visualizador de PDF principal -->
+        <div class="pdf-container">
+            <div class="pdf-header">
+                <h2>Material del Curso</h2>
+            </div>
+            <iframe class="pdf-viewer" src="https://fasabeteam.com/libertad/cd2/repaso/Cultura%20Digital%20I.pdf"></iframe>
+            <a href="https://fasabeteam.com/libertad/cd2/repaso/Cultura%20Digital%20I.pdf" class="download-btn" download>
+                Descargar PDF
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Instituto Libertad. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
